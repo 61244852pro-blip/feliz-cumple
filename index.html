@@ -1,0 +1,1122 @@
+﻿
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#123b46">
+    <meta name="description" content="Una aventura tropical y cinematográfica preparada especialmente para celebrar el cumpleaños de Angge.">
+
+    <title>Angge | Una aventura extraordinaria</title>
+
+    <!-- TIPOGRAFÍAS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- ESTILOS (UNIFICADOS EN UN SOLO ARCHIVO) -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ICONO DE LA PÁGINA -->
+    <meta name="color-scheme" content="light">
+</head>
+
+<body>
+
+        <!-- ==================================================
+         SIMBOLO VECTORIAL: PALMERA TROPICAL REALISTA
+    =================================================== -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="svg-defs" aria-hidden="true">
+        <defs>
+            <linearGradient id="pTrunkGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#5a3318"/>
+                <stop offset="28%" stop-color="#8a5327"/>
+                <stop offset="65%" stop-color="#b67a3f"/>
+                <stop offset="100%" stop-color="#4e2b12"/>
+            </linearGradient>
+
+            <radialGradient id="pCocoGrad" cx="35%" cy="35%" r="65%">
+                <stop offset="0%" stop-color="#8c5828"/>
+                <stop offset="60%" stop-color="#553011"/>
+                <stop offset="100%" stop-color="#2c1706"/>
+            </radialGradient>
+
+            <linearGradient id="pLeafBack" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#236c2a"/>
+                <stop offset="100%" stop-color="#0f3c14"/>
+            </linearGradient>
+
+            <linearGradient id="pLeafMain" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#4db83e"/>
+                <stop offset="50%" stop-color="#28832a"/>
+                <stop offset="100%" stop-color="#15531d"/>
+            </linearGradient>
+
+            <linearGradient id="pLeafFront" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#7ee052"/>
+                <stop offset="40%" stop-color="#44b433"/>
+                <stop offset="100%" stop-color="#1f7125"/>
+            </linearGradient>
+
+            <g id="tropical-palm-symbol">
+                <!-- Sombra y monticulo en el suelo -->
+                <ellipse cx="120" cy="405" rx="55" ry="10" fill="rgba(60, 40, 15, 0.22)"/>
+                <path d="M 65 410 C 85 398, 155 398, 175 410 Z" fill="#d2a66e"/>
+
+                <!-- TRONCO CURVADO REALISTA -->
+                <path d="M 105 405 C 112 370, 130 315, 148 240 C 158 198, 156 170, 146 150 L 160 150 C 172 172, 174 202, 164 245 C 148 318, 132 370, 135 405 Z" fill="url(#pTrunkGrad)"/>
+                
+                <!-- Anillos de corteza del tronco -->
+                <path d="M 109 388 Q 123 392 134 389" stroke="#3d1f0b" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.75"/>
+                <path d="M 114 362 Q 128 366 137 363" stroke="#3d1f0b" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.75"/>
+                <path d="M 121 334 Q 135 338 143 335" stroke="#3d1f0b" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.75"/>
+                <path d="M 129 304 Q 142 308 150 305" stroke="#3d1f0b" stroke-width="2.8" stroke-linecap="round" fill="none" opacity="0.75"/>
+                <path d="M 137 274 Q 149 278 156 275" stroke="#3d1f0b" stroke-width="2.6" stroke-linecap="round" fill="none" opacity="0.75"/>
+                <path d="M 144 242 Q 155 246 162 243" stroke="#3d1f0b" stroke-width="2.4" stroke-linecap="round" fill="none" opacity="0.75"/>
+                <path d="M 148 212 Q 158 215 163 213" stroke="#3d1f0b" stroke-width="2.2" stroke-linecap="round" fill="none" opacity="0.75"/>
+                <path d="M 149 182 Q 157 185 162 183" stroke="#3d1f0b" stroke-width="2.2" stroke-linecap="round" fill="none" opacity="0.75"/>
+                <path d="M 147 162 Q 154 164 159 162" stroke="#3d1f0b" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.75"/>
+
+                <!-- Hierba en la base -->
+                <path d="M 102 405 C 95 390, 85 385, 78 388 C 88 395, 96 405, 102 405 Z" fill="#2d7c2a"/>
+                <path d="M 135 405 C 145 392, 158 390, 165 393 C 155 398, 142 405, 135 405 Z" fill="#388e34"/>
+
+                <!-- HOJAS DE FONDO (Capa oscura y profunda) -->
+                <path d="M 153 148 C 170 100, 205 60, 255 45 C 235 65, 218 95, 195 125 C 178 145, 165 148, 153 148 Z" fill="url(#pLeafBack)"/>
+                <path d="M 180 92 L 202 75 M 195 106 L 222 90 M 210 118 L 242 105 M 225 128 L 260 120 M 165 110 L 178 85 M 220 70 L 250 55 M 238 52 L 270 42" stroke="#1b5a22" stroke-width="4.5" stroke-linecap="round"/>
+
+                <path d="M 153 148 C 130 95, 95 55, 45 42 C 65 65, 85 98, 110 125 C 128 145, 142 148, 153 148 Z" fill="url(#pLeafBack)"/>
+                <path d="M 125 95 L 100 78 M 110 108 L 82 92 M 95 120 L 62 108 M 80 130 L 45 122 M 140 112 L 126 88 M 85 70 L 55 58 M 65 52 L 32 45" stroke="#1b5a22" stroke-width="4.5" stroke-linecap="round"/>
+
+                <path d="M 153 148 C 150 90, 148 45, 152 15 C 158 45, 160 90, 155 148 Z" fill="url(#pLeafBack)"/>
+                <path d="M 151 75 L 132 55 M 153 70 L 172 52 M 150 100 L 130 82 M 154 95 L 175 78 M 149 125 L 132 108 M 155 120 L 176 105 M 151 45 L 138 28 M 153 40 L 168 25" stroke="#1b5a22" stroke-width="4" stroke-linecap="round"/>
+
+                <!-- HOJAS PRINCIPALES (Foliolos tropicales en abanico) -->
+                <!-- Penca Superior Izquierda -->
+                <path d="M 132 125 L 115 95 M 112 110 L 90 78 M 90 98 L 65 65 M 68 88 L 42 55 M 48 82 L 22 55 M 30 82 L 8 62" stroke="#369c2d" stroke-width="6" stroke-linecap="round"/>
+                <path d="M 132 125 L 115 95 M 112 110 L 90 78 M 90 98 L 65 65 M 68 88 L 42 55 M 48 82 L 22 55 M 30 82 L 8 62" stroke="#5ee048" stroke-width="3" stroke-linecap="round"/>
+                <path d="M 135 138 L 122 165 M 118 126 L 100 162 M 98 114 L 75 155 M 78 102 L 52 145 M 58 94 L 32 135 M 38 88 L 15 122 M 20 84 L 2 108" stroke="#23751e" stroke-width="6.5" stroke-linecap="round"/>
+                <path d="M 135 138 L 122 165 M 118 126 L 100 162 M 98 114 L 75 155 M 78 102 L 52 145 M 58 94 L 32 135 M 38 88 L 15 122 M 20 84 L 2 108" stroke="#3eb632" stroke-width="3.5" stroke-linecap="round"/>
+                <path d="M 153 148 C 120 105, 75 75, 15 82 C 60 98, 105 120, 153 148 Z" fill="url(#pLeafMain)"/>
+                <path d="M 153 148 C 120 105, 75 75, 15 82" stroke="#8ae878" stroke-width="2.5" fill="none" opacity="0.8"/>
+
+                <!-- Penca Superior Derecha -->
+                <path d="M 175 122 L 192 90 M 195 105 L 218 72 M 218 92 L 245 60 M 238 85 L 268 52 M 258 78 L 285 52" stroke="#369c2d" stroke-width="6" stroke-linecap="round"/>
+                <path d="M 175 122 L 192 90 M 195 105 L 218 72 M 218 92 L 245 60 M 238 85 L 268 52 M 258 78 L 285 52" stroke="#5ee048" stroke-width="3" stroke-linecap="round"/>
+                <path d="M 172 135 L 188 165 M 190 122 L 212 160 M 210 110 L 238 152 M 230 98 L 260 142 M 250 90 L 278 130 M 268 82 L 292 115" stroke="#23751e" stroke-width="6.5" stroke-linecap="round"/>
+                <path d="M 172 135 L 188 165 M 190 122 L 212 160 M 210 110 L 238 152 M 230 98 L 260 142 M 250 90 L 278 130 M 268 82 L 292 115" stroke="#3eb632" stroke-width="3.5" stroke-linecap="round"/>
+                <path d="M 153 148 C 185 100, 230 70, 285 75 C 240 95, 195 120, 153 148 Z" fill="url(#pLeafMain)"/>
+                <path d="M 153 148 C 185 100, 230 70, 285 75" stroke="#8ae878" stroke-width="2.5" fill="none" opacity="0.8"/>
+
+                <!-- Penca Caida Inferior Izquierda -->
+                <path d="M 135 146 L 125 178 M 115 148 L 102 188 M 95 156 L 78 202 M 75 168 L 55 218 M 55 182 L 35 230 M 38 198 L 20 242 M 26 210 L 12 245" stroke="#1d6619" stroke-width="6" stroke-linecap="round"/>
+                <path d="M 135 146 L 125 178 M 115 148 L 102 188 M 95 156 L 78 202 M 75 168 L 55 218 M 55 182 L 35 230 M 38 198 L 20 242 M 26 210 L 12 245" stroke="#4ec73f" stroke-width="3" stroke-linecap="round"/>
+                <path d="M 125 142 L 105 130 M 105 148 L 82 135 M 82 158 L 55 145 M 62 172 L 35 165 M 42 190 L 18 185" stroke="#3aa730" stroke-width="4.5" stroke-linecap="round"/>
+                <path d="M 153 148 C 120 140, 70 160, 25 210 C 65 175, 115 155, 153 148 Z" fill="url(#pLeafFront)"/>
+                <path d="M 153 148 C 120 140, 70 160, 25 210" stroke="#7de460" stroke-width="2.5" fill="none"/>
+
+                <!-- Penca Caida Inferior Derecha -->
+                <path d="M 172 146 L 182 178 M 190 148 L 205 188 M 210 156 L 228 202 M 230 168 L 250 216 M 248 182 L 268 228 M 265 196 L 282 238 M 278 208 L 292 240" stroke="#1d6619" stroke-width="6" stroke-linecap="round"/>
+                <path d="M 172 146 L 182 178 M 190 148 L 205 188 M 210 156 L 228 202 M 230 168 L 250 216 M 248 182 L 268 228 M 265 196 L 282 238 M 278 208 L 292 240" stroke="#4ec73f" stroke-width="3" stroke-linecap="round"/>
+                <path d="M 180 142 L 202 128 M 200 146 L 225 132 M 222 156 L 250 142 M 242 170 L 270 160 M 262 188 L 288 180" stroke="#3aa730" stroke-width="4.5" stroke-linecap="round"/>
+                <path d="M 153 148 C 185 140, 235 158, 280 205 C 240 172, 190 155, 153 148 Z" fill="url(#pLeafFront)"/>
+                <path d="M 153 148 C 185 140, 235 158, 280 205" stroke="#7de460" stroke-width="2.5" fill="none"/>
+
+                <!-- Penca Alta Centro-Izquierda -->
+                <path d="M 148 115 L 125 90 M 140 90 L 115 65 M 130 68 L 102 45 M 115 48 L 88 28 M 95 35 L 68 18" stroke="#39a92f" stroke-width="5" stroke-linecap="round"/>
+                <path d="M 148 115 L 125 90 M 140 90 L 115 65 M 130 68 L 102 45 M 115 48 L 88 28 M 95 35 L 68 18" stroke="#68e552" stroke-width="2.5" stroke-linecap="round"/>
+                <path d="M 150 120 L 168 95 M 142 98 L 158 72 M 130 78 L 145 52 M 118 60 L 132 38 M 102 46 L 115 25 M 88 35 L 98 18" stroke="#257a1f" stroke-width="5" stroke-linecap="round"/>
+                <path d="M 150 120 L 168 95 M 142 98 L 158 72 M 130 78 L 145 52 M 118 60 L 132 38 M 102 46 L 115 25 M 88 35 L 98 18" stroke="#4ec73f" stroke-width="2.5" stroke-linecap="round"/>
+                <path d="M 153 148 C 142 85, 110 35, 75 22 C 105 48, 132 95, 153 148 Z" fill="url(#pLeafFront)"/>
+                <path d="M 153 148 C 142 85, 110 35, 75 22" stroke="#88f06c" stroke-width="2" fill="none"/>
+
+                <!-- Penca Alta Centro-Derecha -->
+                <path d="M 158 115 L 180 88 M 165 90 L 190 62 M 175 68 L 202 42 M 188 48 L 215 25 M 208 32 L 235 15" stroke="#39a92f" stroke-width="5" stroke-linecap="round"/>
+                <path d="M 158 115 L 180 88 M 165 90 L 190 62 M 175 68 L 202 42 M 188 48 L 215 25 M 208 32 L 235 15" stroke="#68e552" stroke-width="2.5" stroke-linecap="round"/>
+                <path d="M 155 120 L 138 95 M 162 98 L 146 72 M 172 78 L 158 52 M 185 60 L 172 38 M 200 45 L 188 25 M 215 32 L 205 18" stroke="#257a1f" stroke-width="5" stroke-linecap="round"/>
+                <path d="M 155 120 L 138 95 M 162 98 L 146 72 M 172 78 L 158 52 M 185 60 L 172 38 M 200 45 L 188 25 M 215 32 L 205 18" stroke="#4ec73f" stroke-width="2.5" stroke-linecap="round"/>
+                <path d="M 153 148 C 162 82, 192 32, 228 18 C 198 48, 172 95, 153 148 Z" fill="url(#pLeafFront)"/>
+                <path d="M 153 148 C 162 82, 192 32, 228 18" stroke="#88f06c" stroke-width="2" fill="none"/>
+
+                <!-- COCOS 3D EN EL CORAZON DE LA PALMERA -->
+                <circle cx="143" cy="153" r="10.5" fill="url(#pCocoGrad)"/>
+                <circle cx="140" cy="149" r="2.5" fill="rgba(255,255,255,0.3)"/>
+                <circle cx="163" cy="151" r="11" fill="url(#pCocoGrad)"/>
+                <circle cx="160" cy="147" r="2.8" fill="rgba(255,255,255,0.3)"/>
+                <circle cx="153" cy="163" r="9.5" fill="url(#pCocoGrad)"/>
+                <circle cx="151" cy="159" r="2.2" fill="rgba(255,255,255,0.3)"/>
+            </g>
+        </defs>
+    </svg>
+
+    <!-- ==================================================
+         PANTALLA DE CARGA
+    =================================================== -->
+
+    <div id="loading-screen" class="loading-screen" role="dialog" aria-modal="true" aria-label="Invitacion especial para Angge">
+
+        <!-- Destellos magicos de fondo -->
+        <div class="welcome-particles" aria-hidden="true">
+            <span class="w-sparkle" style="top: 15%; left: 18%;">&#10022;</span>
+            <span class="w-sparkle" style="top: 25%; right: 16%; animation-delay: 0.8s;">&#10023;</span>
+            <span class="w-sparkle" style="bottom: 24%; left: 14%; animation-delay: 1.4s;">&#10024;</span>
+            <span class="w-sparkle" style="bottom: 18%; right: 20%; animation-delay: 0.5s;">&#10022;</span>
+        </div>
+
+        <!-- FASE 1: Preparacion de la isla -->
+        <div id="loading-phase" class="loading-content">
+            <div class="loading-icon" aria-hidden="true">&#127796;</div>
+            <p class="loading-eyebrow">UNA AVENTURA ESPECIAL</p>
+            <h2>Preparando la isla...</h2>
+            <p class="loading-description">
+                Estamos preparando algo &uacute;nico para Angge.
+            </p>
+            <div class="loading-bar" aria-hidden="true">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+
+        <!-- FASE 2: Tarjeta de Presentacion / Invitacion VIP -->
+        <div id="welcome-card" class="welcome-card" style="display: none;">
+            <div class="welcome-card-glow" aria-hidden="true"></div>
+
+            <div class="welcome-badge">
+                <span class="badge-icon">&#127796;</span>
+                <span>EXPEDICI&Oacute;N DE CUMPLEA&Ntilde;OS</span>
+                <span class="badge-star">&#10022;</span>
+            </div>
+
+            <div class="welcome-recipient">
+                <p class="recipient-label">INVITADA DE HONOR</p>
+                <h1 class="recipient-name">&iexcl;Feliz Cumplea&ntilde;os, Angge! &#128149;</h1>
+            </div>
+
+            <div class="welcome-message-box">
+                <p class="welcome-message">
+                    Hoy es un d&iacute;a para celebrar a lo grande.
+                    Alguien prepar&oacute; una aventura &uacute;nica en una isla misteriosa 
+                    llena de recuerdos, sorpresas y amigos que te est&aacute;n esperando.
+                </p>
+            </div>
+
+            <div class="welcome-audio-tip">
+                <span class="audio-tip-icon">&#127911;</span>
+                <span>Sube el volumen para vivir la experiencia completa</span>
+            </div>
+
+            <button id="enter-adventure-btn" class="welcome-button" type="button">
+                <span>&#10024; Abrir mi regalo &#10024;</span>
+                <span class="welcome-btn-arrow" aria-hidden="true">&#8594;</span>
+            </button>
+        </div>
+
+    </div>
+
+    <!-- ==================================================
+         EXPERIENCIA PRINCIPAL
+    =================================================== -->
+
+    <main id="experience">
+
+
+        <!-- ==================================================
+             ESCENA 1: INTRODUCCIÓN
+        =================================================== -->
+
+        <section id="scene-intro" class="scene scene-intro active" aria-label="Introducción">
+
+            <div class="intro-environment" aria-hidden="true">
+
+                <div class="intro-sky"></div>
+
+                <div class="intro-sun"></div>
+
+                <div class="intro-clouds">
+                    <div class="cloud cloud-one"></div>
+                    <div class="cloud cloud-two"></div>
+                    <div class="cloud cloud-three"></div>
+                </div>
+
+                <div class="intro-ocean"></div>
+
+                <div class="intro-island"></div>
+
+                <div class="intro-palm palm-left">
+                    <svg viewBox="0 0 300 420" class="palm-svg" aria-hidden="true"><use href="#tropical-palm-symbol"/></svg>
+                </div>
+                <div class="intro-palm palm-right">
+                    <svg viewBox="0 0 300 420" class="palm-svg" aria-hidden="true"><use href="#tropical-palm-symbol"/></svg>
+                </div>
+
+                <div id="intro-particles" class="intro-particles"></div>
+
+                <div class="intro-light-overlay"></div>
+
+            </div>
+
+
+            <div class="intro-content">
+
+                <p class="intro-eyebrow">
+                    UNA HISTORIA MUY ESPECIAL
+                </p>
+
+                <h1>
+                    ¡Feliz cumpleaños!
+                    <span>Angge</span>
+                </h1>
+
+                <p class="intro-description">
+                    Hay aventuras que comienzan con una sorpresa.
+                    Esta es una de ellas.
+                </p>
+
+                <button
+                    id="start-adventure"
+                    class="primary-button"
+                    type="button"
+                >
+                    <span>Comenzar aventura</span>
+                    <span class="button-arrow" aria-hidden="true">→</span>
+                </button>
+
+            </div>
+
+
+            <div class="intro-footer">
+                <span>UNA AVENTURA HECHA CON MUCHO CARIÑO</span>
+            </div>
+
+            <div class="scroll-indicator" aria-hidden="true">
+                <span></span>
+            </div>
+
+        </section>
+
+
+
+        <!-- ==================================================
+             ESCENA 2: LLEGADA A LA ISLA
+        =================================================== -->
+
+        <section id="scene-island" class="scene scene-island" aria-label="La isla tropical">
+
+            <div class="island-environment" aria-hidden="true">
+
+                <!-- CIELO -->
+
+                <div class="island-sky"></div>
+
+                <div class="island-sun"></div>
+
+                <div class="island-clouds">
+                    <div class="cloud cloud-one"></div>
+                    <div class="cloud cloud-two"></div>
+                    <div class="cloud cloud-three"></div>
+                </div>
+
+
+                <!-- MONTAÑAS -->
+
+                <div class="island-mountains">
+
+                    <div class="mountain mountain-one"></div>
+                    <div class="mountain mountain-two"></div>
+                    <div class="mountain mountain-three"></div>
+
+                </div>
+
+
+                <!-- OCÉANO -->
+
+                <div class="island-ocean">
+
+                    <div class="ocean-wave wave-one"></div>
+                    <div class="ocean-wave wave-two"></div>
+                    <div class="ocean-wave wave-three"></div>
+
+                    <div class="ocean-reflections"></div>
+
+                </div>
+
+
+                <!-- PLAYA -->
+
+                <div class="island-beach"></div>
+
+
+                <!-- VEGETACIÓN -->
+
+                <div class="island-palm palm-one">
+                    <svg viewBox="0 0 300 420" class="palm-svg" aria-hidden="true"><use href="#tropical-palm-symbol"/></svg>
+                </div>
+                <div class="island-palm palm-two">
+                    <svg viewBox="0 0 300 420" class="palm-svg" aria-hidden="true"><use href="#tropical-palm-symbol"/></svg>
+                </div>
+                <div class="island-palm palm-three">
+                    <svg viewBox="0 0 300 420" class="palm-svg" aria-hidden="true"><use href="#tropical-palm-symbol"/></svg>
+                </div>
+
+                <div class="island-plants plants-left"></div>
+                <div class="island-plants plants-right"></div>
+
+
+                <!-- ILUMINACIÓN Y PARTÍCULAS -->
+
+                <div class="island-atmosphere"></div>
+
+                <div id="island-particles" class="island-particles"></div>
+
+            </div>
+
+
+            <!-- TÍTULO DEL ESCENARIO -->
+
+            <div class="island-heading">
+
+                <p class="scene-eyebrow">
+                    UN LUGAR FUERA DE LO COMÚN
+                </p>
+
+                <h2>Bienvenida a la isla</h2>
+
+                <p class="island-subtitle">
+                    Parece que alguien te estaba esperando...
+                </p>
+
+            </div>
+
+
+            <!-- =============================================
+                 PERSONAJES
+                 
+                 IMÃGENES NECESARIAS:
+                 â–º assets/characters/mike.png  â†’ Imagen de Mike (PNG con fondo transparente, tamaÃ±o recomendado: 400x600px)
+                 â–º assets/characters/lu.png    â†’ Imagen de Lu (PNG con fondo transparente, tamaÃ±o recomendado: 400x600px)
+                 â–º assets/characters/og.png    â†’ Imagen de Og (PNG con fondo transparente, tamaÃ±o recomendado: 400x600px)
+            ============================================= -->
+
+            <div class="character-stage" aria-label="Personajes de la aventura">
+
+                <div
+                    id="mike"
+                    class="character character-mike"
+                    data-character="mike"
+                >
+                    <!-- IMAGEN 1: Mike â€” coloca la imagen en assets/characters/mike.png -->
+                    <img
+                        src="mike.png"
+                        alt="Mike"
+                        class="character-image"
+                    >
+
+                </div>
+
+
+                <div
+                    id="lu"
+                    class="character character-lu"
+                    data-character="lu"
+                >
+                    <!-- IMAGEN 2: Lu â€” coloca la imagen en assets/characters/lu.png -->
+                    <img
+                        src="lu.png"
+                        alt="Lu"
+                        class="character-image"
+                    >
+
+                </div>
+
+
+                <div
+                    id="og"
+                    class="character character-og"
+                    data-character="og"
+                >
+                    <!-- IMAGEN 3: Og â€” coloca la imagen en assets/characters/og.png -->
+                    <img
+                        src="og.png"
+                        alt="Og"
+                        class="character-image"
+                    >
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==================================================
+             ESCENA 3: LA MISIÓN
+        =================================================== -->
+
+        <section id="scene-mission" class="scene scene-mission" aria-label="La misión especial">
+
+            <div class="mission-background" aria-hidden="true">
+
+                <div class="mission-glow"></div>
+                <div class="mission-decoration decoration-one"></div>
+                <div class="mission-decoration decoration-two"></div>
+
+            </div>
+
+
+            <div class="mission-content">
+
+                <p class="scene-eyebrow">
+                    ARCHIVO ESPECIAL DE LA ISLA
+                </p>
+
+                <h2>¡Tenemos una misión!</h2>
+
+                <p class="mission-introduction">
+                    Los habitantes de la isla necesitan tu ayuda.
+                </p>
+
+
+                <article class="mission-card">
+
+                    <div class="mission-icon" aria-hidden="true">
+                        ✦
+                    </div>
+
+                    <p class="mission-label">
+                        MISIÓN N.º 1
+                    </p>
+
+                    <h3>La sorpresa de Angge</h3>
+
+                    <p>
+                        Hoy es un día extraordinario.
+                        Tenemos que preparar una celebración
+                        para alguien que hace que esta isla
+                        sea mucho más divertida.
+                    </p>
+
+                    <p>
+                        Hay recuerdos, sorpresas y un mensaje
+                        que todavía no has descubierto.
+                    </p>
+
+                    <button
+                        id="accept-mission"
+                        class="primary-button"
+                        type="button"
+                    >
+                        <span>¡Acepto la misión!</span>
+                        <span class="button-arrow" aria-hidden="true">→</span>
+                    </button>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==================================================
+             ESCENA 4: FOTOGRAFÍAS Y RECUERDOS
+        =================================================== -->
+
+        <section id="scene-memories" class="scene scene-memories" aria-label="Fotografías y recuerdos de Angge">
+
+            <div class="memories-background" aria-hidden="true">
+
+                <div class="memories-glow"></div>
+                <div class="memories-decoration"></div>
+
+            </div>
+
+
+            <div class="memories-content">
+
+                <p class="scene-eyebrow">
+                    ARCHIVO CONFIDENCIAL
+                </p>
+
+                <h2>La protagonista de esta historia</h2>
+
+                <p class="memories-description">
+                    Toda gran aventura necesita una protagonista.
+                    Y esta historia no sería igual sin ti.
+                </p>
+
+
+                <div class="photo-gallery">
+
+
+                    <!-- ==============================================
+                         FOTOGRAFÍA DIVERTIDA
+                    ============================================== -->
+
+                    <article class="memory-card photo-one">
+
+                        <div class="photo-frame">
+
+                            <div class="photo-decoration" aria-hidden="true">
+                                ✦
+                            </div>
+
+                            <img
+                                src="angge-funny.jpg"
+                                alt="Angge haciendo una expresión divertida"
+                                loading="lazy"
+                            >
+
+                        </div>
+
+                        <p class="photo-caption">
+                            Evidencia de que la diversión nunca falta.
+                        </p>
+
+                        <button
+                            class="photo-message primary-button-small"
+                            type="button"
+                            data-character="funny"
+                            aria-label="Descubrir personaje: Angge y su alegría"
+                        >
+                            <span>&#10024; Descubrir personaje</span>
+                        </button>
+
+                    </article>
+
+
+                    <!-- ==============================================
+                         SEGUNDA FOTOGRAFÍA
+                    ============================================== -->
+
+                    <article class="memory-card photo-two">
+
+                        <div class="photo-frame">
+
+                            <div class="photo-decoration" aria-hidden="true">
+                                ✧
+                            </div>
+
+                            <img
+                                src="angge-photo.jpg"
+                                alt="Angge en un momento especial"
+                                loading="lazy"
+                            >
+
+                        </div>
+
+                        <p class="photo-caption">
+                            Cada momento tiene algo especial.
+                        </p>
+
+                        <button
+                            class="photo-message primary-button-small"
+                            type="button"
+                            data-character="special"
+                            aria-label="Descubrir personaje: Angge y su brillo especial"
+                        >
+                            <span>&#10024; Descubrir personaje</span>
+                        </button>
+
+                    </article>
+
+                </div>
+
+
+                <div
+                    id="photo-message-display"
+                    class="photo-message-display"
+                    aria-live="polite"
+                    style="display: none;"
+                ></div>
+
+
+                <button
+                    id="continue-memories"
+                    class="primary-button"
+                    type="button"
+                >
+                    <span>Continuar aventura</span>
+                    <span class="button-arrow" aria-hidden="true">→</span>
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- ==================================================
+             MODAL CARTA DE PERSONAJE (FOTO IZQUIERDA - TEXTO DERECHA)
+        =================================================== -->
+        <div id="character-card-modal" class="character-card-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="letter-modal-title">
+            <div class="character-card-backdrop"></div>
+            
+            <div class="character-card-container">
+                <button id="close-letter-modal" class="character-card-close" type="button" aria-label="Cerrar carta">&times;</button>
+                
+                <div class="character-card-inner">
+                    <!-- PARTE IZQUIERDA: FOTO COMPLETA -->
+                    <div class="character-card-col-photo">
+                        <div class="character-card-photo-wrapper">
+                            <img id="letter-modal-img" src="angge-funny.jpg" alt="Foto completa de Angge" class="character-card-full-img">
+                            <span id="letter-modal-badge" class="character-card-photo-tag">&#10022; Angge &#10022;</span>
+                        </div>
+                    </div>
+
+                    <!-- PARTE DERECHA: TEXTO / CARTA DE HOMENAJE -->
+                    <div class="character-card-col-text">
+                        <div class="character-card-header">
+                            <span id="letter-modal-sub" class="character-card-sub">&#10022; MOMENTO INOLVIDABLE &#10022;</span>
+                            <h3 id="letter-modal-title" class="character-card-title">En este día tan especial...</h3>
+                            <div class="character-card-divider" aria-hidden="true"></div>
+                        </div>
+
+                        <div id="letter-modal-body" class="character-card-body">
+                            <!-- Inyectado por JavaScript -->
+                        </div>
+
+                        <div class="character-card-footer">
+                            <span class="character-card-sign">&#9825; Con todo el cariño del mundo &#9825;</span>
+                            <button id="letter-modal-action" class="character-card-btn" type="button">
+                                <span>Continuar explorando</span>
+                                <span aria-hidden="true">&#8594;</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- ==================================================
+             ESCENA 5: EL REGALO
+        =================================================== -->
+
+        <section id="scene-gift" class="scene scene-gift" aria-label="El regalo de cumpleaños">
+
+            <div class="gift-background" aria-hidden="true">
+
+                <div class="gift-glow"></div>
+                <div class="gift-decoration gift-decoration-one"></div>
+                <div class="gift-decoration gift-decoration-two"></div>
+
+            </div>
+
+
+            <div class="gift-content">
+
+                <p class="scene-eyebrow">
+                    ¡MISIÓN COMPLETADA!
+                </p>
+
+                <h2>Tenemos algo para ti</h2>
+
+                <p class="gift-description">
+                    Nuestros amigos han preparado una sorpresa.
+                    Te atreves a descubrirla?
+                </p>
+
+
+                <!-- CAJA DE REGALO -->
+
+                <button
+                    id="open-gift"
+                    class="gift-box"
+                    type="button"
+                    aria-label="Abrir el regalo de cumpleaños"
+                    aria-expanded="false"
+                    aria-controls="gift-reveal"
+                >
+
+                    <span class="gift-sparkles" aria-hidden="true">
+                        ✦ ✧ ✦
+                    </span>
+
+                    <span class="gift-lid"></span>
+
+                    <span class="gift-body"></span>
+
+                    <span class="gift-ribbon"></span>
+
+                    <span class="gift-bow" aria-hidden="true"></span>
+
+                </button>
+
+
+                <!-- CONTENIDO DEL REGALO -->
+
+                <div
+                    id="gift-reveal"
+                    class="gift-reveal"
+                    aria-live="polite"
+                    aria-hidden="true"
+                >
+
+                    <p class="gift-reveal-eyebrow">
+                        UNA PEQUEÑA SORPRESA
+                    </p>
+
+                    <h3>Sorpresa, Angge!</h3>
+
+                    <p>
+                        Porque las personas especiales
+                        merecen detalles especiales.
+                    </p>
+
+                    <button
+                        id="continue-gift"
+                        class="primary-button"
+                        type="button"
+                    >
+                        <span>Hay algo más para ti</span>
+                        <span class="button-arrow" aria-hidden="true">→</span>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==================================================
+             ESCENA 6: LA CARTA
+        =================================================== -->
+
+        <section id="scene-letter" class="scene scene-letter" aria-label="Carta de cumpleaños para Angge">
+
+            <div class="letter-background" aria-hidden="true">
+
+                <div class="letter-glow"></div>
+
+                <div class="letter-decoration letter-decoration-one"></div>
+                <div class="letter-decoration letter-decoration-two"></div>
+
+            </div>
+
+
+            <div class="letter-content">
+
+                <p class="scene-eyebrow">
+                    UN MENSAJE PARA TI
+                </p>
+
+                <h2>Antes de terminar esta aventura</h2>
+
+                <p class="letter-instruction">
+                    Hay algo que quiero decirte.
+                    Abre el sobre para descubrirlo.
+                </p>
+
+
+                <!-- SOBRE INTERACTIVO -->
+
+                <button
+                    id="open-letter"
+                    class="envelope"
+                    type="button"
+                    aria-label="Abrir la carta de cumpleaños"
+                    aria-expanded="false"
+                    aria-controls="letter-message"
+                >
+
+                    <span class="envelope-back"></span>
+
+                    <span class="envelope-paper"></span>
+
+                    <span class="envelope-front"></span>
+
+                    <span class="envelope-flap"></span>
+
+                    <span class="envelope-heart" aria-hidden="true">
+                        ♥
+                    </span>
+
+                </button>
+
+
+                <!-- CARTA -->
+
+                <div
+                    id="letter-message"
+                    class="letter-message"
+                    aria-hidden="true"
+                >
+
+                    <article class="letter-paper">
+
+                        <div class="letter-paper-decoration" aria-hidden="true">
+                            ✦
+                        </div>
+
+                        <p class="letter-date">
+                            UN DÍA ESPECIAL PARA UNA PERSONA ESPECIAL
+                        </p>
+
+                        <h3>Querida Angge:</h3>
+
+                        <p>Feliz cumpleaños!</p>
+
+                        <p>
+                            Hoy es un día para celebrar a una persona
+                            que merece muchísimas cosas bonitas
+                            espero que esta nueva etapa de tu vida
+                            esté llena de momentos felices, nuevas
+                            aventuras, sueños cumplidos y personas
+                            que te recuerden lo valiosa que eres.
+                        </p>
+
+                        <p>
+                            nunca dejes de ser servicial, alegre,
+                            divertida y bromista que hace que los
+                            momentos compartidos sean especiales.
+                            Nunca pierdas esa forma tan tuya de ser.
+                        </p>
+
+                        <p>
+                            Sigue disfrutando, riendo y persiguiendo
+                            todo aquello que te haga feliz.
+                            Te deseo lo mejor hoy y siempre.
+                        </p>
+
+                        <p class="letter-signature">
+                            Con mucho cariño,<br>
+                            <span>Marco</span>
+                        </p>
+
+                    </article>
+
+
+                    <button
+                        id="finish-letter"
+                        class="primary-button"
+                        type="button"
+                    >
+                        <span>Descubrir el final</span>
+                        <span class="button-arrow" aria-hidden="true">→</span>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==================================================
+             ESCENA 7: GRAN FINAL
+        =================================================== -->
+
+        <section id="scene-finale" class="scene scene-finale" aria-label="Feliz cumpleaños Angge">
+
+            <div class="finale-background" aria-hidden="true">
+
+                <div class="finale-sky"></div>
+                <div class="finale-glow"></div>
+                <div class="finale-light-rays"></div>
+
+            </div>
+
+
+            <div
+                id="finale-particles"
+                class="finale-particles"
+                aria-hidden="true"
+            ></div>
+
+
+            <div class="finale-content">
+
+                <p class="scene-eyebrow">
+                    UNA AVENTURA INOLVIDABLE
+                </p>
+
+                <h1>
+                    ¡Feliz cumpleaños!
+                    <span>Angge</span>
+                </h1>
+
+                <p class="finale-message">
+                    Que la vida te regale muchísimas aventuras,
+                    motivos para sonreír y momentos que siempre
+                    quieras recordar.
+                </p>
+
+
+                <!-- =============================================
+                     PERSONAJES DEL FINAL
+                     
+                     Usa las mismas imÃ¡genes de los personajes:
+                     â–º assets/characters/mike.png
+                     â–º assets/characters/lu.png
+                     â–º assets/characters/og.png
+                ============================================= -->
+
+                <div class="finale-characters" aria-label="Mike, Lu y Og">
+
+                    <!-- IMAGEN 6: Mike -->
+                    <img
+                        src="mike.png"
+                        alt="Mike celebrando"
+                        loading="lazy"
+                    >
+
+                    <!-- IMAGEN 7: Lu -->
+                    <img
+                        src="lu.png"
+                        alt="Lu celebrando"
+                        loading="lazy"
+                    >
+
+                    <!-- IMAGEN 8: Og -->
+                    <img
+                        src="og.png"
+                        alt="Og celebrando"
+                        loading="lazy"
+                    >
+
+                </div>
+
+
+                <p class="finale-closing">
+                    ¡Esta isla siempre tendrá un lugar para ti!
+                </p>
+
+
+                <button
+                    id="restart-adventure"
+                    class="primary-button"
+                    type="button"
+                >
+                    <span>Volver a vivir la aventura</span>
+                    <span class="button-arrow" aria-hidden="true">↻</span>
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==================================================
+             SISTEMA GLOBAL DE DIÁLOGOS
+        =================================================== -->
+
+        <div
+            id="dialogue-container"
+            class="dialogue-container"
+            aria-live="polite"
+            aria-atomic="true"
+            aria-hidden="true"
+        >
+
+            <div class="dialogue-box">
+
+                <div class="dialogue-header">
+
+                    <span class="dialogue-indicator" aria-hidden="true"></span>
+
+                    <p
+                        id="dialogue-speaker"
+                        class="dialogue-speaker"
+                    ></p>
+
+                </div>
+
+
+                <p
+                    id="dialogue-text"
+                    class="dialogue-text"
+                ></p>
+
+
+                <button
+                    id="next-dialogue"
+                    class="dialogue-button"
+                    type="button"
+                >
+                    Siguiente →
+                </button>
+
+            </div>
+
+        </div>
+
+
+    </main>
+
+
+
+    <!-- ==================================================
+         CONTROLES DE AUDIO
+    =================================================== -->
+
+    <div class="audio-controls" aria-label="Controles de audio">
+
+        <button
+            id="music-toggle"
+            class="control-button"
+            type="button"
+            aria-label="Activar o desactivar música"
+            aria-pressed="false"
+            title="Música"
+        >
+            <span aria-hidden="true">♪</span>
+        </button>
+
+
+        <button
+            id="sound-toggle"
+            class="control-button"
+            type="button"
+            aria-label="Activar o desactivar efectos de sonido"
+            aria-pressed="true"
+            title="Efectos de sonido"
+        >
+            <span aria-hidden="true">♫</span>
+        </button>
+
+    </div>
+
+
+
+    <!-- ==================================================
+         ARCHIVOS DE AUDIO
+    =================================================== -->
+
+   <audio
+        id="background-music"
+        loop
+        preload="none"
+    >
+        <source src="Luis Miguel - Sueña (Video Con Letra).mp3" type="audio/mpeg">
+    </audio>
+
+
+
+    <!-- ==================================================
+         NOTIFICACIONES
+    =================================================== -->
+
+    <div
+        id="notification"
+        class="notification"
+        role="status"
+        aria-live="polite"
+    ></div>
+
+
+
+    <!-- ==================================================
+         JAVASCRIPT
+    =================================================== -->
+
+    <script src="script.js" defer></script>
+
+</body>
+
+</html>
